@@ -110,16 +110,33 @@
     <h2>Teaching activities - Dr Paul Sant</h2>
     <div style="margin-left:14%;padding:1px 16px;height:1000px;">
     <div style="margin-left:14%;padding:1px 16px;">
-     <button type="button" class="collapsible">Artificial Intelligence</button>
+     <button type="button" class="collapsible">2023-</button>
     <div class="content">
-        <p>Since 2022 I have become increasingly interested in the appications of various Artificial Intelligence tools 
-          and techniques. This initially began as part of PhD project supervision in the context of AI being used
-        in the field of cyber-attack detection and mitigation in a network context. However, more recently I have begun
-        looking at the wider application of AI into different disciplines, including Law.</p>
-      <p>I have also sucxcessfully supervised PhD work in the area of recommender systems, specifically in the context
-      of evaluating and incorporating more real world emotions such as empathy and physical attributes of speech.</p>
+        <ol>
+          <li>yMSc Project in Computer Science</li>
+          <li>Software Development</li>
+          <li>Web Technologies</li>
+          <li>Applications of Artificial Intelligence</li>
+          <li>Database Management Technologies
+        </ol>
     </div>
    </div>
-    
+     <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </div>
   </body>
 </html>
