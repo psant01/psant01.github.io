@@ -56,9 +56,85 @@
      font-size: 20px;
      padding-left: 20px;
     }
+    li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+}
+
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
     </style>
   </head>
   <body>
-    <h2>Research Pulications - Dr Paul Sant</h2>
+    <h2>Research Publications - Dr Paul Sant</h2>
+
+    <p>The easiest way for you to get an up-to-date list om my publications is via DBLP and/or Google Scholar. 
+      The sections below allow you to click through to my live publications list for each.</p>
+    <div style="margin-left:14%;padding:1px 16px;height:1000px;">
+    <div style="margin-left:14%;padding:1px 16px;">
+     <button type="button" class="collapsible">DBLP - Dr Paul Sant</button>
+    <div class="content">
+        <a href="https://dblp.org/pid/92/5304.html">Publications (up to 2022) via DBLP</a>
+    </div>
+   </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </div>
   </body>
 </html>
