@@ -42,6 +42,19 @@
      .active {
        background-color: #04AA6D;
      }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    img {
+      max-width: 100%;
+      max-height:100%;
+    }
+    .text {
+     font-size: 20px;
+     padding-left: 20px;
+    }
     </style>
   </head>
   <body>
@@ -56,13 +69,19 @@
 </ul>
 
     <h2>Dr Paul Sant - Head of Computer Science: The University of Law </h2>
-    <img src="PSantBio.jpg" align="right"></img>
-    <p>
-    Welcome to my personal web space. I am an Associate Professor and the Head of Computer Science at The University of Law. 
-    Computer Science at The University of Law focuses on the interface and application of trchnology within other disciplines,
-    including: Law, Business, Criminology and Psychology. We look at ways in which we csn help professionals in these disciplines
-    apply technology to help solve problems, improve business processes and increase efficiency.
-    </p>
+    <div class="container">
+     <div class="image">
+      <img src="PSantBio.jpg" align="right"></img>
+      </div>
+      <div clas="text">
+       <p>
+        Welcome to my personal web space. I am an Associate Professor and the Head of Computer Science at The University of Law. 
+        Computer Science at The University of Law focuses on the interface and application of trchnology within other disciplines,
+        including: Law, Business, Criminology and Psychology. We look at ways in which we csn help professionals in these disciplines
+        apply technology to help solve problems, improve business processes and increase efficiency.
+       </p>
+      </div>
+    </div>
 
     <p>
     From this site you can use the menu navigation bars to view my research, publications, teaching and external activities. Click on each menu item
