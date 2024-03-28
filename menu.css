@@ -72,7 +72,7 @@ h1 {
  text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {background-color: #0084a9;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -91,7 +91,7 @@ h1 {
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #0084a9;
 }
 
 .content {
