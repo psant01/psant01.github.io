@@ -13,10 +13,8 @@ h1 {
         font-style: normal;
         font-size: 20px;
       }
-      ol {
-        display: list-item;
-      }
-      .inline {
+      
+      inline {
               display: list-item;
       }        
       ul {
